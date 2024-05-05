@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import characterService from '../service/character.service'
-import { Character } from '../type/character.type'
+
 
 
 

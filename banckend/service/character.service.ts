@@ -1,5 +1,4 @@
 import characterModel from '../schema/character.schema'
-import { Character} from '../type/character.type'
 import axios from 'axios';
 
 class CharacterService {
