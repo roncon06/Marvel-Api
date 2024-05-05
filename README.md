@@ -5,18 +5,25 @@ Todas as rotas da API
 
 //Rota para buscar personagens de um evento especifico da Marvel
 routes.get('/characters/sync', characterController.buscarESalvarPersonagensDaMarvel);
+
 //Rota para criar um personagem
 routes.post('/character', characterController.createCharacter)
+
 //Rota para buscar todos personagens
 routes.get('/characters', characterController.buscarTodosPersonagens);
+
 //Rota para buscar personagem porID
 routes.get('/characters/:id', characterController.buscarPersonagemPorId);
+
 //Rota para deletar um personagem
 routes.delete('/characters/:id', characterController.deletarPersonagem);
+
 //Rota para atualizar um personagem
 routes.put('/characters/:id', characterController.updateCharacter);
+
 //Rota para buscar o personagem por nome
 routes.get('/:name', characterController.findCharacterByName);
+
 //Rotas para buscar quantos personagens aparece na saga 
 routes.get('/character/count', characterController.countCharacters);
 
